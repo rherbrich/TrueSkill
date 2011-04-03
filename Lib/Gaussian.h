@@ -13,6 +13,13 @@ namespace TrueSkill {
 struct Gaussian {
 	// Initializes a Gaussian
 	Gaussian(double mu=0.0, double sigma=1.0);
+
+	// Returns the mean of the Gaussian
+	double GetMean ( ) { return tau/pi; }
+
+	// Returns the variance of the Gaussian
+	double GetVariance ( ) { return 1.0/pi; }
+
 private:
 	// The precision mean of the Gaussian
 	double	tau;

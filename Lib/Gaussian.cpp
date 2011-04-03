@@ -9,8 +9,11 @@
 
 namespace TrueSkill {
 
+// Initializes a Gaussian using mean and standard deviation
 Gaussian::Gaussian(double mu, double sigma)
 {
+	pi = 1.0 / (sigma * sigma);
+	tau = mu/pi;
 }
 
 }
